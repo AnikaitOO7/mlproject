@@ -1,6 +1,8 @@
+using ci/cd pipeline and MLOPS for generic data science project
+
 setup
 1. create a git hub repository
-2. create new virtual environment = [ conda create -p mlvenv python==3.8 -y] (-y is for the approval)
+2. create new virtual environment = [ conda create -p venv python==3.8 -y] (-y is for the approval)
 3. activate environment = [conda activate mlvenv/] 
 4. clone repository and sync with the git hub
     git init
@@ -17,7 +19,7 @@ setup
 9. pip install requirements.txt in the end -e . trigger setup to build package which has the meta data of the project
 
 
-Project Structure / Exception handling
+Project Structure / Exception handling /logging / utils
 
 1. in src create components (modules that we will use in our project) folder and in component folder create __init__.py which then can be created as package and can be imported in other file location
 2. then create data_ingestion.py for reading data from the data base in train and test 
@@ -25,3 +27,5 @@ Project Structure / Exception handling
 4. then create model_trainer.py for training model (confussion matrix to classification and if regression may use r square , adjusted r square value)
 5. then create the pipeline folder for training and prediction pipeline in train_pipeline.py and other predict_pipeline.py and at last also create __init__.py file
 6. in src create three more file for logger.py for logs , exception.py for handling exception and utlis.py for creating function that will be use in entire application
+7. in  exception.py create custom exception and go through the python custom excepton documentation
+8. in logger.py create the log file with the current working directory path with generic industry standard format
