@@ -1,0 +1,27 @@
+setup
+1. create a git hub repository
+2. create new virtual environment = [ conda create -p mlvenv python==3.8 -y] (-y is for the approval)
+3. activate environment = [conda activate mlvenv/] 
+4. clone repository and sync with the git hub
+    git init
+    create a readme.md file and then
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/AnikaitOO7/mlproject.git
+    git push -u origin main
+5. create a .gitignore file in the github and select python templete ()
+6. create setup.py(to create in python package in pypi(building application as package itself)) file and requirements.txt
+7. create src directory (complete development take place in this folder) and in it create  __init__.py (In Python, the __init__.py file is used to mark a directory as a Python package) file for the find_packages() to build so that internal folder also work as package
+8. (-e .)(editable mode) in requirements.txt to automatically trigger setup.py 
+9. pip install requirements.txt in the end -e . trigger setup to build package which has the meta data of the project
+
+
+Project Structure / Exception handling
+
+1. in src create components (modules that we will use in our project) folder and in component folder create __init__.py which then can be created as package and can be imported in other file location
+2. then create data_ingestion.py for reading data from the data base in train and test 
+3. then create data_transformation.py file for transforming data from category feature into numerical feature and how to handle one hot encoding and how to handle label encoding
+4. then create model_trainer.py for training model (confussion matrix to classification and if regression may use r square , adjusted r square value)
+5. then create the pipeline folder for training and prediction pipeline in train_pipeline.py and other predict_pipeline.py and at last also create __init__.py file
+6. in src create three more file for logger.py for logs , exception.py for handling exception and utlis.py for creating function that will be use in entire application
