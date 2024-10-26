@@ -29,3 +29,85 @@ Project Structure / Exception handling /logging / utils
 6. in src create three more file for logger.py for logs , exception.py for handling exception and utlis.py for creating function that will be use in entire application
 7. in  exception.py create custom exception and go through the python custom excepton documentation
 8. in logger.py create the log file with the current working directory path with generic industry standard format
+
+Project With Deployment-Project, Problem Statement,EDA And Model Training
+
+1.Create a new folder name notebook in notebook create another folder name data in which there is a csv file of students then in notebook create to files first eda student and other file modern training.ipynb to perform eda(Exploratory Data Analysis) on the data set 
+and model training on the dataset respectively
+
+project name :- Student Performance Indicator
+Life cycle of Machine learning Project
+In EDA Student Performance
+    Understanding the Problem Statement
+    Data Collection
+    Data Checks to perform
+    Exploratory data analysis
+    Data Pre-Processing
+    Model Training
+    Choose best model
+    1) Problem statement
+    This project understands how the student's performance (test scores) is affected by other variables such as Gender, Ethnicity, Parental level of education, Lunch and Test preparation course.
+    2) Data Collection
+    Dataset Source - https://www.kaggle.com/datasets/spscientist/students-performance-in-exams?datasetId=74977
+    The data consists of 8 column and 1000 rows.
+        2.1 Import Data and Required Packages
+            Importing Pandas, Numpy, Matplotlib, Seaborn and Warings Library.
+            Import the CSV Data as Pandas DataFrame
+            Show Top 5 Records
+            Shape of the dataset
+        2.2 Dataset information
+            gender : sex of students -> (Male/female)
+            race/ethnicity : ethnicity of students -> (Group A, B,C, D,E)
+            parental level of education : parents' final education ->(bachelor's degree,some college,master's degree,associate's degree,high school)
+            lunch : having lunch before test (standard or free/reduced)
+            test preparation course : complete or not complete before test
+            math score
+            reading score
+            writing score
+    3. Data Checks to perform
+        Check Missing values
+        Check Duplicates
+        Check data type
+        Check the number of unique values of each column
+        Check statistics of data set
+        Check various categories present in the different categorical column
+    4. Exploring Data ( Visualization )
+        4.1 Visualize average score distribution to make some conclusion.
+            Histogram
+            Kernel Distribution Function (KDE)
+    5. Conclusions
+        Student's Performance is related with lunch, race, parental level education
+        Females lead in pass percentage and also are top-scorers
+        Student's Performance is not much related with test preparation course
+        Finishing preparation course is benefitial.
+
+IN Model training 
+    1. install sklearn catboost and xgboost (Scikit-learn for basic models or pipelines, CatBoost if you have many categorical features, and XGBoost if you need highly optimized models for tabular data.)
+    2. Model Training Overview
+        2.1 Importing Libraries
+
+            Core libraries: Pandas, NumPy, Matplotlib, Seaborn, and Warnings.
+            Model evaluation metrics: mean_squared_error, r2_score, and mean_absolute_error.
+            Regression models:
+                KNeighborsRegressor
+                DecisionTreeRegressor
+                RandomForestRegressor
+                AdaBoostRegressor
+                SVR (Support Vector Regression)
+                Linear Regression, Ridge, and Lasso
+                CatBoostRegressor
+                XGBRegressor
+            Hyperparameter tuning using RandomizedSearchCV.
+        2.2 Loading the Dataset
+
+            The dataset used is StudentsPerformance.csv.
+        2.3 Exploratory Data Analysis (EDA)
+
+            Displaying the top 5 records using df.head().
+        2.4 Feature Preparation
+
+            Setting X and Y variables:
+            X: All features except for 'math score'.
+            Y (target): 'math score'.
+        This notebook focuses on regression model training and evaluation using multiple models from 
+        Scikit-learn, CatBoost, and XGBoost, likely aiming to predict students' math scores based on other performance metrics
