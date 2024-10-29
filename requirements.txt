@@ -5,4 +5,5 @@ matplotlib
 scikit-learn
 catboost
 xgboost
+dill #help creating .pkl file
 #-e .
