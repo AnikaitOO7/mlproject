@@ -1,4 +1,4 @@
-# 📊 Student Performance Indicator - Machine Learning Project
+# 📊 Student Performance Indicator - Data Science Project
 
 This project analyzes how students' academic performance is influenced by various factors such as **gender**, **ethnicity**, **parental education**, **lunch type**, and **test preparation course**. The aim is to predict **math scores** using **machine learning models**, while implementing **CI/CD pipelines** and **MLOps principles** for seamless workflow.
 
