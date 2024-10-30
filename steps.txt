@@ -2,13 +2,11 @@ Setup & Environment Configuration
 Create a GitHub Repository:
 
 Initialize the project repository:
-bash
-Copy code
+
 git init
 git remote add origin https://github.com/AnikaitOO7/mlproject.git
 Create a README.md to describe the project, and push the initial commit:
-bash
-Copy code
+
 git add README.md  
 git commit -m "Initial Commit"  
 git branch -M main  
