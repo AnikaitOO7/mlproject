@@ -5,6 +5,8 @@ Initialize the project repository:
 
 git init
 git remote add origin https://github.com/AnikaitOO7/mlproject.git
+
+git remote -v to check the remote connection with git hub repository
 Create a README.md to describe the project, and push the initial commit:
 
 git add README.md  
@@ -15,7 +17,7 @@ Create a Virtual Environment:
 
 
 conda create -p venv python==3.8 -y  # '-y' auto-approves installation
-conda activate ./venv/
+conda activate venv/
 Clone the Repository & Sync with GitHub:
 
 Use GitHub to ensure code versioning and collaboration.
